@@ -1,0 +1,181 @@
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+font-family:Arial, sans-serif;
+}
+
+body{
+background:#f6f2ec;
+color:#222;
+}
+
+.container{
+max-width:850px;
+margin:auto;
+background:white;
+padding:25px;
+border-radius:8px;
+}
+
+.site-header{
+text-align:center;
+margin-bottom:25px;
+}
+
+.site-header h1{
+color:#2f5c60;
+}
+
+.main-nav{
+background:#5f8d8a;
+margin-bottom:25px;
+border-radius:6px;
+}
+
+.main-nav ul{
+list-style:none;
+display:flex;
+}
+
+.main-nav li{
+flex:1;
+text-align:center;
+}
+
+.main-nav a{
+display:block;
+padding:12px;
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+.main-nav a:hover{
+background:#3f6f6c;
+}
+
+.skip-link{
+position:absolute;
+left:-9999px;
+}
+
+.skip-link:focus{
+left:10px;
+top:10px;
+background:black;
+color:white;
+padding:8px;
+}
+
+.hero{
+background:#e8dccd;
+padding:25px;
+text-align:center;
+margin-bottom:30px;
+border-radius:6px;
+}
+
+.intro p, .about-section p{
+margin-bottom:15px;
+line-height:1.6;
+}
+
+.feature-box{
+background:#f9f7f3;
+border:1px solid #d6cec3;
+padding:15px;
+margin-bottom:15px;
+border-radius:5px;
+}
+
+.button{
+display:inline-block;
+background:#5f8d8a;
+color:white;
+padding:10px 20px;
+text-decoration:none;
+border-radius:5px;
+margin-top:10px;
+}
+
+.button:hover{
+background:#3f6f6c;
+}
+
+.site-footer{
+text-align:center;
+border-top:1px solid #ddd;
+padding-top:15px;
+margin-top:20px;
+}
+
+img{
+max-width:100%;
+height:auto;
+border-radius:6px;
+}
+
+.feature-image{
+width:400px;
+margin:15px auto;
+display:block;
+}
+
+.contact-table{
+width:100%;
+border-collapse:collapse;
+margin-top:15px;
+}
+
+.contact-table th,
+.contact-table td{
+border:1px solid #ccc;
+padding:10px;
+}
+
+.contact-table th{
+background:#5f8d8a;
+color:white;
+}
+
+label{
+display:block;
+margin-top:10px;
+font-weight:bold;
+}
+
+input{
+width:100%;
+padding:8px;
+margin-top:5px;
+border:1px solid #ccc;
+border-radius:4px;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px){
+.container{
+width:95%;
+padding:15px;
+}
+
+.main-nav ul{
+flex-direction:column;
+}
+
+.feature-image{
+width:100%;
+}
+}
+
+@media (max-width: 480px){
+h1{font-size:22px;}
+h2{font-size:18px;}
+p{font-size:14px;}
+
+.button{
+width:100%;
+text-align:center;
+}
+}
